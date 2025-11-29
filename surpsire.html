@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğum Günün Mübarək!</title>
+    <style>
+        /* Təbrik Səhifəsi CSS-i */
+        :root {
+            --bday-gold: #FFD700;
+            --bday-dark: #A0522D;
+            --bday-bg: #FFF0F5;
+            /* Çox yüngül çəhrayı/ağ fon */
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: var(--bday-bg);
+            color: var(--bday-dark);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .bday-card {
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 90%;
+            border: 5px solid var(--bday-gold);
+            /* Qızılı çərçivə */
+            animation: fadeIn 2s ease-in;
+            /* Zərif giriş effekti */
+        }
+
+        h3 {
+            color: var(--bday-dark);
+            font-size: 4em;
+            margin-bottom: 5px;
+            text-shadow: 3px 3px var(--bday-gold);
+        }
+
+        .confetti {
+            font-size: 2em;
+            display: block;
+            margin: 15px auto 25px;
+            color: var(--bday-gold);
+        }
+
+        .message {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bday-card">
+        <div class="confetti">🎂🎉🎈</div>
+        <h3>Doğum Günün Mübarək!</h3>
+
+        <p class="message">
+            Hər il olduğu kimi, bu il də sənin yanındayam və bu, mənim ən böyük xoşbəxtliyimdir.
+            Səninlə keçən hər gün bayramdır, amma bu gün xüsusilə sənindir.
+            <br><br>
+            Arzu edirəm ki, yeni yaşın sənə yalnız sevinclər, uğurlar və sonsuz sevgi gətirsin!
+        </p>
+
+        <p style="font-style: italic; font-weight: bold; margin-top: 30px; font-size: 1.1em;">
+            Səni Hər Şeydən Çox Sevən Aşkın...
+        </p>
+        <div class="confetti">✨🎁❤️</div>
+    </div>
+
+</body>
+
+</html>

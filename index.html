@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sənin Üçün Özəl Hədiyyə ❤️</title>
+    <style>
+        /* CSS Kodları buradadır */
+        :root {
+            /* Əsas Rəng Palitrası */
+            --pink-light: #FFC0CB;
+            /* Açıq çəhrayı (Fon) */
+            --pink-dark: #FF69B4;
+            /* Tünd çəhrayı (Vurğu) */
+            --red-heart: #E91E63;
+            /* Qırmızı (Ürək) */
+            --text-color: #333;
+            /* Mətn rəngi */
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--pink-light);
+            /* Əsas fon rəngi */
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px var(--shadow-color);
+            max-width: 600px;
+            width: 90%;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: var(--pink-dark);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--pink-light);
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .heart,
+        .star-emoji {
+            font-size: 3em;
+            color: var(--red-heart);
+            display: block;
+            margin: 20px auto;
+        }
+
+        .heart {
+            animation: pulse 1.5s infinite;
+            /* Ürəyin döyünmə effekti (Orijinal) */
+        }
+
+        /* Ürək Döyünmə Animasiyası */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Şəkil Placeholder */
+        .image-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: var(--pink-light);
+            border: 2px dashed var(--pink-dark);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            font-style: italic;
+            color: var(--pink-dark);
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        /* Yeni Əlavə Olunan Keçid Butonu CSS-i */
+        .next-page-button {
+            text-decoration: none;
+            /* Linkin alt xəttini götürür */
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 3em;
+            /* Orta boy ürək */
+            color: var(--red-heart);
+            margin-top: 15px;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+        .next-page-button:hover {
+            transform: scale(1.2);
+            /* Mouse üzərinə gələndə böyümə */
+            color: var(--pink-dark);
+            /* Rəng dəyişikliyi */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <span class="heart">❤️</span>
+
+        <h1>Şürayəm, Bu Səhifə Sadəcə Sənin Üçündür!</h1>
+
+        <p>
+            Həyatıma girdiyin gündən hər şey daha isti, daha mənalı oldu. Bu hədiyyə böyük sevgimi anlatmaq üçün kifayət
+            deyil, amma bil ki, hər anımda, hər xatirəmdə səni daşıyıram. Yanımda olduğun üçün təşəkkür edirəm
+        </p>
+
+        <div class="image-placeholder">
+            <img src="image/biz.jpeg" alt="Bizim Birgə Şəklimiz"
+                style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
+        </div>
+
+        <p>
+            Səni hər şeydən,hər kəsdən çox sevirəm!
+        </p>
+
+        <span class="star-emoji">✨</span>
+
+        <p style="margin-top: 30px; font-weight: bold;">
+            Kiçik sürprizi görmək üçün ürəyə toxun:
+        </p>
+        <a href="love.html" class="next-page-button" title="Sürprizə Keç">
+            ❤️
+        </a>
+    </div>
+
+</body>
+
+</html>
